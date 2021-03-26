@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Route, Link, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Form from './components/Form';
 import Home from './components/Home';
 import * as yup from 'yup'
@@ -69,10 +69,6 @@ const App = () => {
       <header>
       <h1>Lambda Eats</h1>
         <h2>PIZZA?</h2>
-        <nav>
-          <Link to = '/' > Home </Link>
-          <Link to = '/pizza'> Pizza </Link>
-        </nav>
         </header>
         <Switch>
           <Route path ='/pizza'>

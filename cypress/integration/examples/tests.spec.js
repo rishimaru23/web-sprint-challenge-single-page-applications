@@ -2,7 +2,6 @@ describe ('App tests', ()=> {
     beforeEach(() =>{
         cy.visit('http://localhost:3001')
     })
-    const pizzaRedirect = () => cy.get("button[id=redirect]")
     const submitBtn = () => cy.get("button[id=submit]")
     const nameInput = () => cy.get('input[name=name]')
     const sizeInput = () => cy.get('select[name=size]')
